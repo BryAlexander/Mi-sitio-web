@@ -75,10 +75,9 @@
   if (enviado === '1') {
     const mensaje = document.createElement('div');
     mensaje.textContent = "¡Tu mensaje ha sido enviado correctamente!";
-    mensaje.classList.add('mensaje-exito'); // Clase CSS separada
+    mensaje.classList.add('mensaje-exito'); 
     document.body.prepend(mensaje);
 
-    // Opcional: quitar el mensaje después de 5 segundos
     setTimeout(() => mensaje.remove(), 5000);
   }
 </script>
