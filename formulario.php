@@ -1,12 +1,11 @@
 <?php
 
-$host = "localhost";
-$puerto = 3307;
-$db = "formulario";
-$user = "root";
-$pass = "";
+$host = "sql204.infinityfree.comt";
+$db = "if0_40492297_contactosdb";
+$user = "if0_40492297";
+$pass = "vzIYHCJSHT";
 
-$conexion =new mysqli($host, $user, $pass, $db, $puerto);
+$conexion =new mysqli($host, $user, $pass, $db);
 
 if ($conexion->connect_error){
     die("Conexión fallida: ". $conexion->connect_error);
@@ -46,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         header("Location: contacto.html?error=1");
     exit;     
     }
-    
+
 } else {
 
     header("Location: contacto.html");
