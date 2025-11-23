@@ -1,0 +1,58 @@
+body {
+    background-color: #e4eaf7; /* color de fondo suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #343a40; /* color principal del texto */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2a2b2a; 
+}
+
+header p.lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.foto-cuadrada{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid rgb(131, 129, 131); 
+}
+
+.Justificado{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.Pasatiempos{
+    text-align: center; 
+    color: rgb(243, 86, 86);
+}
+
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+

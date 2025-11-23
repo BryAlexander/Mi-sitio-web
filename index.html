@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola, soy Alexander</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilo.css">
+ </head>
+ <body>
+ <div class="container mt-5">
+    <header class="text-center mb-5">
+        <h1>Hola, soy Bryan Alexander</h1>
+        <p class="lead">Apasionado por la tecnología y el desarrollo web</p>
+    </header>
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-4 text-center">
+            <img src="imagenes/mi_foto.jpeg" class="img-fluid img-thumbnail shadow-sm foto-cuadrada" alt="Mi foto">
+        </div>
+        <div class="col-md-8">
+            <h2>Mi Biografía</h2>
+               <p class="Justificado">
+               ¡Hola! Soy Bryan Alexander, operador en Productive Business Solutions (PBS) y estudiante en línea de la Universidad Técnica Particular de Loja.  
+                Me apasiona la tecnología, aprender cosas nuevas y enfrentar retos creativos que me permitan crecer profesionalmente.
+               </p>
+        </div>
+    </div>
+    <section class="mb-5">
+        <h2 class="text-center mb-3">Mis Hobbies</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3 mb-3">
+                    <h5 class=" Pasatiempos"> Fútbol </h5>
+                    <p class="Justificado">
+                     Me encanta hacer deporte, especialmente el fútbol. Disfruto jugar con amigos, participar en torneos locales y mantenerme activo para sentirme saludable y con energía. 
+                     Además, el deporte me ayuda a desarrollar disciplina, trabajo en equipo y concentración, habilidades que aplico en mi vida diaria.
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 mb-3">
+                    <h5 class=" Pasatiempos">Videojuegos y Cine</h5>
+                    <p class="Justificado">
+                      Me encanta jugar videojuegos y también ir al cine a ver películas. 
+                      Me gusta sumergirme en historias diferentes, explorar mundos nuevos y disfrutar de los retos que cada juego o película me presenta. 
+                      Estas actividades me entretienen, me inspiran y me ayudan a desconectarme un rato del día a día.
+                      </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 mb-3">
+                    <h5 class=" Pasatiempos">Musica y Caminatas</h5>
+                    <p class="Justificado">
+                     Me encanta escuchar música mientras doy caminatas. 
+                     Es mi momento para desconectarme, relajarme y disfrutar de mis canciones favoritas mientras recorro la ciudad. 
+                     La música me inspira y me da energía para seguir con mis actividades diarias.
+                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="text-center mt-5">
+    <a href="contacto.html" class="btn btn-success btn-lg">
+        <i class="bi bi-envelope-fill"></i> Contáctame
+    </a>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const enviado = params.get('enviado');
+
+  if (enviado === '1') {
+    const mensaje = document.createElement('div');
+    mensaje.textContent = "¡Tu mensaje ha sido enviado correctamente!";
+    mensaje.classList.add('mensaje-exito'); // Clase CSS separada
+    document.body.prepend(mensaje);
+
+    // Opcional: quitar el mensaje después de 5 segundos
+    setTimeout(() => mensaje.remove(), 5000);
+  }
+</script>
+
+</body>
+</html>
